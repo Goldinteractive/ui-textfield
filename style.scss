@@ -13,7 +13,7 @@ $error-color: #cc0000 !default;
 
 
 .ui-textfield {
-	label,input {
+	label,input,textarea {
 		display: inline-block;
 		width:100%;
 		font-size: $textfield-font-size;
@@ -22,7 +22,7 @@ $error-color: #cc0000 !default;
 	label {
 		margin: $textfield-input-margin;
 	}
-	input {
+	input, textarea {
 		padding:$textfield-input-padding;
 		border: $textfield-input-border;
 		-webkit-appearance: none;
@@ -46,12 +46,14 @@ $error-color: #cc0000 !default;
 	}
 	&.error label,
 	&.error input,
+	&.error textarea,
 	input.error {
 		color:  $error-color;
 		border-color: $error-color;
 	}
 	&.success label,
 	&.success input,
+	&.success textarea,
 	input.success {
 		color:$success-color;
 		border-color: $success-color;
