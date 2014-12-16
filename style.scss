@@ -1,0 +1,59 @@
+@import "compass";
+
+$textfield-font-size: 1rem !default;
+$textfield-input-padding: 0.5rem !default;
+$textfield-input-margin: 0.5rem 0 !default;
+$textfield-input-border: 1px solid #cfcfcc !default;
+$textfield-input-hover-border: 1px solid #999999 !default;
+$textfield-input-focused-border: 1px solid #333333 !default;
+$textfield-text-color: #333333;
+
+$success-color: green !default;
+$error-color: #cc0000 !default;
+
+
+.ui-textfield {
+	label,input {
+		display: inline-block;
+		width:100%;
+		font-size: $textfield-font-size;
+		color:$textfield-text-color;
+	}
+	label {
+		margin: $textfield-input-margin;
+	}
+	input {
+		padding:$textfield-input-padding;
+		border: $textfield-input-border;
+		-webkit-appearance: none;
+		@include box-sizing(border-box);
+
+		&:focus,
+		&:active,
+		&:hover:focus,
+		&:active:focus {
+			color:$textfield-text-color !important;
+			border: $textfield-input-focused-border;
+		}
+		&:invalid {
+			border-color: lighten($error-color,48%);
+			background: lighten($error-color,58%);
+			@include box-shadow(none);
+		}
+		&:hover {
+			border:$textfield-input-hover-border;
+		}
+	}
+	&.error label,
+	&.error input,
+	input.error {
+		color:  $error-color;
+		border-color: $error-color;
+	}
+	&.success label,
+	&.success input,
+	input.success {
+		color:$success-color;
+		border-color: $success-color;
+	}
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/303907c6-81e5-4c39-9e43-c01f800f62b8.css"/>
+		<style>
+			body {
+				font-family:'Aktiv Grotesk W01 Light1370681', Helvetica, Arial, sans-serif;
+				/*font-family:'Aktiv Grotesk W01 Regular' , Helvetica, Arial, sans-serif;*/
+			}
+			h1,h2,h3,h4 {
+				font-family:'Aktiv Grotesk W01 Regular' , Helvetica, Arial, sans-serif;
+			}
+			input {
+				font-family: 'Aktiv Grotesk W01 Light1370681';
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Text field</h1>
+		<div class="ui-textfield">
+			<label for="foo">Name</label>
+			<input id="foo" type="text" />
+		</div>
+		<div class="ui-textfield error">
+			<label for="bar">Error</label>
+			<input id="bar" type="text" />
+		</div>
+		<div class="ui-textfield success">
+			<label for="baz">Success</label>
+			<input id="baz" type="text" />
+		</div>
+		<div class="ui-textfield">
+			<label for="req">Required*</label>
+			<input required id="req" type="text" />
+		</div>
+	</body>
+</html>
