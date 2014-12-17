@@ -2,7 +2,7 @@
 
 $textfield-font-size: 1rem !default;
 $textfield-input-padding: 0.5rem !default;
-$textfield-input-margin: 0.5rem 0 !default;
+$textfield-label-vertical-margin: 0.5rem !default;
 $textfield-input-border: 1px solid #cfcfcc !default;
 $textfield-input-hover-border: 1px solid #999999 !default;
 $textfield-input-focused-border: 1px solid #333333 !default;
@@ -20,7 +20,8 @@ $error-color: #cc0000 !default;
 		color:$textfield-text-color;
 	}
 	label {
-		margin: $textfield-input-margin;
+		margin-top: $textfield-label-vertical-margin;
+		margin-bottom: $textfield-label-vertical-margin;
 	}
 	input, textarea {
 		padding:$textfield-input-padding;
@@ -32,7 +33,7 @@ $error-color: #cc0000 !default;
 		&:active,
 		&:hover:focus,
 		&:active:focus {
-			color:$textfield-text-color !important;
+			color: $textfield-text-color !important;
 			border: $textfield-input-focused-border;
 		}
 		&:invalid {
