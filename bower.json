@@ -1,0 +1,22 @@
+{
+  "name": "ui-textfield",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Goldinteractive/ui-textfield",
+  "authors": [
+    "gold interactive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "gi-scss-global-variables": "0.2.0"
+  },
+  "dependencies": {
+    "gi-scss-mixins": "~0.2.0"
+  }
+}
