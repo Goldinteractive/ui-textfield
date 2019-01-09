@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Goldinteractive/ui-textfield/issues"
   },
-  "homepage": "https://github.com/Goldinteractive/ui-textfield#readme"
+  "homepage": "https://github.com/Goldinteractive/ui-textfield#readme",
+  "dependencies": {
+    "gi-scss-mixins": "https://github.com/Goldinteractive/scss-mixins"
+  }
 }
